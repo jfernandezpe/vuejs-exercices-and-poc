@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notes when it has a new notes should render correctly 1`] = `
+<div>
+  <form
+    class="note-input"
+  >
+    <label>
+      
+      Title 
+      <br />
+       
+      <input
+        placeholder="Your title"
+        type="text"
+      />
+    </label>
+     
+    <label>
+      
+      Description 
+      <br />
+       
+      <textarea
+        placeholder="Your description"
+      />
+    </label>
+     
+    <button>
+      Save
+    </button>
+  </form>
+   
+  <section
+    class="notes"
+  >
+    <article
+      class="card"
+    >
+      <div
+        class="card__header"
+      >
+        <h3>
+          A simple note
+        </h3>
+         
+        <button
+          aria-label="remove note"
+        >
+          X
+        </button>
+      </div>
+       
+      <p>
+        this is the description
+      </p>
+    </article>
+  </section>
+</div>
+`;
