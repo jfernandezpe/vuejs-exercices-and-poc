@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping-list</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+  <style>
+    .tobuy__item {
+      margin-bottom: 0.5em;
+    }
+    .tobuy__item--bougth {
+      text-decoration:line-through;
+      color: #898989
+    }
+  </style>
+</head>
+
+<body>
+  <div id="lista-compras">
+    Elements to buy
+    <div>
+      <form @submit.prevent>
+        <input aria-label="Agregar nuevo" v-model="newItem" placeholder="agregar nuevo">
+        <button :disabled="!newItem.length" class="btn btn-primary" @click="addItem(newItem)">Añadir</button>
+      </form>
+    </div>
+    <ul>
+      <li v-for="item in toBuyInverted" @click="toggleBoughtStatus(item)" class="tobuy__item" :class="{'tobuy__item--bougth': item.bougth}">{{item.name}}</li>
+    </ul>
+    <p v-if="!toBuy.length">The list is empty</p>
+  </div>
+  <script>
+    const app = new Vue({
+      el: '#lista-compras',
+      data: {
+        newItem: '',
+        toBuy: [
+        ],
+      },
+      computed: {
+        toBuyInverted: function(){
+          return [...this.toBuy].reverse();
+        },
+      },
+      methods: {
+        addItem: function (newItem) {
+          if (newItem !== '') {
+            this.toBuy.push({name: newItem, bougth: false})
+            this.newItem = ''
+          }
+        },
+        toggleBoughtStatus: function(item) {
+          item.bougth = !item.bougth;
+        }
+      }
+    })
+  </script>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</html>
