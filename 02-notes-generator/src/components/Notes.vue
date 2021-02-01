@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>This is the awesome notes generator app</h1>
     <form class="note-input" @submit.prevent>
       <label>
         Title <br />
