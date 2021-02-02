@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShoppingCart.vue should render the layout 1`] = `
+<article>
+  <ul>
+    <li>
+      
+      Guitarra eléctrica 1200 
+      <button
+        class="removeFromCart"
+      >
+        Remove
+      </button>
+    </li>
+    <li>
+      
+      iPhone 1800 
+      <button
+        class="removeFromCart"
+      >
+        Remove
+      </button>
+    </li>
+  </ul>
+   
+  <p>
+    Total price: 3000
+  </p>
+   
+  <button
+    class="buy"
+  >
+    Buy
+  </button>
+</article>
+`;

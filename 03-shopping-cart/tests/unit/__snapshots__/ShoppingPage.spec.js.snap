@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShoppingPage.vue shoult render the layout 1`] = `
+<div
+  class="shopping-page"
+>
+  <shoppingcart-stub
+    cartproducts=""
+    class="shopping-cart"
+  />
+   
+  <ul>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/145/640/480"
+        name="Guitarra eléctrica"
+        price="1200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/160/640/480"
+        name="iPhone"
+        price="1800"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/175/640/480"
+        name="Reloj antiguo"
+        price="200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/250/640/480"
+        name="Cámara Vintage"
+        price="950"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/30/640/480"
+        name="Taza Cubana"
+        price="99"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/367/640/480"
+        name="Amazón Kindle"
+        price="99"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`ShoppingPage.vue when receive a buy event should render the layout 1`] = `
+<div
+  class="shopping-page"
+>
+  <shoppingcart-stub
+    cartproducts=""
+    class="shopping-cart"
+  />
+   
+  <ul>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/145/640/480"
+        name="Guitarra eléctrica"
+        price="1200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/160/640/480"
+        name="iPhone"
+        price="1800"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/175/640/480"
+        name="Reloj antiguo"
+        price="200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/250/640/480"
+        name="Cámara Vintage"
+        price="950"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/30/640/480"
+        name="Taza Cubana"
+        price="99"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/367/640/480"
+        name="Amazón Kindle"
+        price="99"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`ShoppingPage.vue when receive addToCart event when the cart has items should render the list 1`] = `
+<div
+  class="shopping-page"
+>
+  <shoppingcart-stub
+    cartproducts="[object Object],[object Object]"
+    class="shopping-cart"
+  />
+   
+  <ul>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/145/640/480"
+        name="Guitarra eléctrica"
+        price="1200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/160/640/480"
+        name="iPhone"
+        price="1800"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        disabled="true"
+        image="https://picsum.photos/id/175/640/480"
+        name="Reloj antiguo"
+        price="200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/250/640/480"
+        name="Cámara Vintage"
+        price="950"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/30/640/480"
+        name="Taza Cubana"
+        price="99"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/367/640/480"
+        name="Amazón Kindle"
+        price="99"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`ShoppingPage.vue when receive addToCart event when the cart was empty should render the list 1`] = `
+<div
+  class="shopping-page"
+>
+  <shoppingcart-stub
+    cartproducts="[object Object]"
+    class="shopping-cart"
+  />
+   
+  <ul>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/145/640/480"
+        name="Guitarra eléctrica"
+        price="1200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/160/640/480"
+        name="iPhone"
+        price="1800"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        disabled="true"
+        image="https://picsum.photos/id/175/640/480"
+        name="Reloj antiguo"
+        price="200"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/250/640/480"
+        name="Cámara Vintage"
+        price="950"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/30/640/480"
+        name="Taza Cubana"
+        price="99"
+      />
+    </li>
+    <li>
+      <catalogproduct-stub
+        class="catalog-product"
+        image="https://picsum.photos/id/367/640/480"
+        name="Amazón Kindle"
+        price="99"
+      />
+    </li>
+  </ul>
+</div>
+`;

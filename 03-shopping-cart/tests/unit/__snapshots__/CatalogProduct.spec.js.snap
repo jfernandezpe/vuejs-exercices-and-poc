@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatalogProduct.vue should render the layout 1`] = `
+<article
+  class="card catalog-product"
+>
+  <h3>
+    Awesome phone
+  </h3>
+   
+  <img
+    src="http://cdn.local/awesome-phone.jpg"
+    width="300"
+  />
+   
+  <p>
+    299.95
+  </p>
+   
+  <button
+    class="button"
+  >
+    Add to cart
+  </button>
+</article>
+`;
